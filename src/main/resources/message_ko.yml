@@ -1,0 +1,22 @@
+title:
+  board: 게시판
+ 
+button: 
+  submit: 등록
+  cancel: 취소
+  delete: 삭제
+
+label:
+  title: 제목을 입력하세요
+  contents: 내용을 입력하세요
+  
+WEB.TITLE : 에드워드 스튜디오
+
+language.type: 한글
+
+msg:
+  error:
+    request: 에러가 발생했습니다.
+    accessdenied: 실행권한이 없습니다.
+    authentication: 페이지 접근 권한이 없습니다. #세션 허용 시간이 만료 되었습니다.
+    pagenotfound: 페이지를 찾을 수 없습니다.

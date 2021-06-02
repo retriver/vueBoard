@@ -1,0 +1,22 @@
+title:
+  board: BOARD
+ 
+button: 
+  submit: SUBMIT
+  cancel: CANCEL
+  delete: DELETE
+
+label:
+  title: please input title
+  contents: please input contents
+
+WEB.TITLE : Edward Studio
+
+language.type: Eng
+
+msg:
+  error:
+    request: An error has occurred.
+    accessdenied: You do not have permission to execute.
+    authentication: You do not have permission to access the page.
+    pagenotfound: Page not found

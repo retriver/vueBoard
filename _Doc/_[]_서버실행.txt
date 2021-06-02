@@ -1,0 +1,12 @@
+
+1. vue  run Server
+    D:\br_framework\workspaces\shop-vue-front\vue>npm run serve
+      >>  서버 설정 : vue.config.js
+
+    > 접속 : http://localhost:9091/
+
+
+2. Spring Boot run server
+    Eclipise Boot Dashboard 에서 실행.
+      >>  서버 설정 : application.yml  @ server.port
+    > 접속 : http://localhost:9090/

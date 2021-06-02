@@ -1,0 +1,85 @@
+plugins {
+    /*
+    id 'org.springframework.boot' version '2.2.6.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+    id 'java'
+    id 'war'
+    */
+    id 'org.springframework.boot' version '2.5.0'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+    id 'war'
+}
+
+// apply plugin: 'io.spring.dependency-management'
+
+group = 'commerce.com'
+// version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+
+bootWar {
+    //archiveBaseName = 'ROOT'
+    archiveFileName = 'ROOT.war'
+    archiveVersion = '0.0.0'
+}
+
+configurations {
+    developmentOnly
+    runtimeClasspath {
+        extendsFrom developmentOnly
+    }
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-web-services'
+
+    implementation 'net.rakugakibox.util:yaml-resource-bundle:1.1'   //YamlResourceBundle
+
+    // compile
+
+    compile 'com.navercorp.lucy:lucy-xss:1.6.3'
+    implementation 'com.navercorp.lucy:lucy-xss-servlet:2.0.1'// naver-lucy
+
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.4'
+
+
+    compileOnly 'org.projectlombok:lombok:1.18.6'   // lombok
+    annotationProcessor 'org.projectlombok:lombok:1.18.6'   // lombok   gradle compile 시 lombok 으로 인한 간섭이 없도록 함
+
+    implementation 'org.apache.httpcomponents.httpclient:4.5.13'
+
+    implementation  'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4:1.16'  // log4j
+
+    runtimeOnly 'mysql:mysql-connector-java:5.1.49'  // 8.0.25 는  log4j 충돌있는듯..?
+
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+
+    // compile <> implementation 왔다기 갔다리 하네..왜지..???
+    implementation 'org.springframework.boot:spring-boot-devtools:2.5.0'
+
+    // testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+
+}
+
+
+test {
+    //useJUnitPlatform()
+    ignoreFailures = true  // gradle clean build를 실행할 때 단위 테스트 실패는 빌드가 실패한 것으로 표시되지 않습니다.
+}
+
+
+

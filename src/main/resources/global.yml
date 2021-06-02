@@ -1,0 +1,10 @@
+company:
+  name: Edward
+  email: retriver@gmail.com
+  number: 02-345-6789
+
+  
+system: 
+  inside.ip: 127.0.0.1
+  physical.root.path: /resources
+
