@@ -4,11 +4,12 @@
 <mapper namespace="commerce.com.board.repository.BoardMapper">
 
   <select id="selectBoardList" resultType="boardVO" parameterType="boardVO">
-    SELECT A.DOC_NO, A.TITLE, A.CONTENT, A.WRITER, A.REG_DTTM, A.VIEW, A.REPLY
+    SELECT A.DOC_NO, A.TITLE, A.CONTENT, A.WRITER, A.REG_DTTM, A.READ_CNT, A.REPLY
       FROM (
-            SELECT A.*, (@ROWNUM := @ROWNUM + 1) AS ROWNUM
+            /* SELECT A.*, (@ROWNUM := @ROWNUM + 1) AS ROWNUM   -- mySql */
+              SELECT A.*, ROWNUM   -- Oracle
               FROM (
-                    SELECT A.DOC_NO, A.TITLE, A.CONTENT, A.WRITER, A.REG_DTTM, A.VIEW, (SELECT COUNT(*) FROM TB_REPLY X WHERE X.DOC_NO = A.DOC_NO) AS REPLY
+                    SELECT A.DOC_NO, A.TITLE, A.CONTENT, A.WRITER, A.REG_DTTM, A.READ_CNT, (SELECT COUNT(*) FROM TB_REPLY X WHERE X.DOC_NO = A.DOC_NO) AS REPLY
                       FROM TB_BOARD A
                     <where>
                       <if test="schType != null and schType != '' and schVal != null and schVal != ''">
@@ -29,7 +30,8 @@
                     <foreach collection="sort" item="sort" index="index" separator=",">
                       ${sort}
                     </foreach>
-                    ) A, (SELECT @ROWNUM := 0) TEMP
+                    ) A
+                    /* , (SELECT @ROWNUM := 0) TEMP -- mySql */
             ) A
      WHERE ROWNUM BETWEEN #{startNo} AND #{endNo}
   </select>
@@ -55,14 +57,16 @@
   </select>
 
   <select id="selectBoardDetail" resultType="boardVO" parameterType="boardVO">
-    SELECT A.DOC_NO, A.TITLE, A.CONTENT, A.WRITER, A.REG_DTTM, A.VIEW, (SELECT COUNT(*) FROM TB_REPLY X WHERE X.DOC_NO = A.DOC_NO) AS REPLY
+    SELECT A.DOC_NO, A.TITLE, A.CONTENT, A.WRITER, A.REG_DTTM, A.READ_CNT, (SELECT COUNT(*) FROM TB_REPLY X WHERE X.DOC_NO = A.DOC_NO) AS REPLY
       FROM TB_BOARD A
      WHERE A.DOC_NO = #{docNo}
   </select>
 
   <insert id="insertBoard" parameterType="boardVO">
     <selectKey resultType="int" keyProperty="docNo" order="BEFORE">
-      SELECT IFNULL(MAX(DOC_NO), 0) + 1 AS DOC_NO FROM TB_BOARD
+      SELECT    /* IFNULL(MAX(DOC_NO), 0) + 1 AS DOC_NO  -- Mysql */
+                NVL(MAX(DOC_NO), 0) + 1 AS DOC_NO  -- Oracle
+      FROM TB_BOARD
     </selectKey>
     INSERT INTO TB_BOARD (DOC_NO, TITLE, CONTENT, WRITER)
     VALUES (#{docNo}, #{title}, #{content}, #{writer})
@@ -82,7 +86,7 @@
 
   <update id="increaseViewCount" parameterType="boardVO">
     UPDATE TB_BOARD
-       SET VIEW = VIEW + 1
+       SET READ_CNT = READ_CNT + 1
      WHERE DOC_NO = #{docNo}
   </update>
 
@@ -95,7 +99,11 @@
 
   <insert id="insertReply" parameterType="replyVO">
     <selectKey resultType="int" keyProperty="replyNo" order="BEFORE">
-      SELECT IFNULL(MAX(REPLY_NO), 0) + 1 AS REPLY_NO FROM TB_REPLY WHERE DOC_NO = #{docNo}
+      SELECT
+            /* IFNULL(MAX(REPLY_NO), 0) + 1 AS REPLY_NO   -- Mysql */
+                NVL(MAX(REPLY_NO), 0) + 1 AS REPLY_NO   -- Oracle
+      FROM TB_REPLY
+      WHERE DOC_NO = #{docNo}
     </selectKey>
     INSERT INTO TB_REPLY (REPLY_NO, DOC_NO, WRITER, CONTENT)
     VALUES (#{replyNo}, #{docNo}, #{writer}, #{content})

@@ -39,6 +39,8 @@ repositories {
     mavenCentral()
 }
 
+
+// https://mvnrepository.com/
 dependencies {
 
     implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -47,8 +49,7 @@ dependencies {
     implementation 'net.rakugakibox.util:yaml-resource-bundle:1.1'   //YamlResourceBundle
 
     // compile
-
-    compile 'com.navercorp.lucy:lucy-xss:1.6.3'
+    implementation 'com.navercorp.lucy:lucy-xss:1.6.3'
     implementation 'com.navercorp.lucy:lucy-xss-servlet:2.0.1'// naver-lucy
 
     implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.4'
@@ -61,7 +62,18 @@ dependencies {
 
     implementation  'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4:1.16'  // log4j
 
-    runtimeOnly 'mysql:mysql-connector-java:5.1.49'  // 8.0.25 는  log4j 충돌있는듯..?
+
+    // postgresql
+    //runtimeOnly 'org.postgresql:postgresql:42.2.20'
+    // mysql
+    //runtimeOnly 'mysql:mysql-connector-java:5.1.49'  // 8.0.25 는  log4j 충돌있는듯..?
+    // Oracle
+    // RuntimeException: Driver net.sf.log4jdbc.sql.jdbcapi.DriverSpy claims to not accept jdbcUrl,
+    //runtimeOnly 'com.oracle.jdbc:ojdbc8:12.2.0.1'
+    //runtimeOnly 'com.oracle.jdbc:ojdbc14:10.2.0.1.0'
+    // ojdbc6 이녀석만   'claims to not accept jdbcUrl'  에러 없음.
+    implementation 'com.oracle.database.jdbc:ojdbc6:11.2.0.4'
+
 
     providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 

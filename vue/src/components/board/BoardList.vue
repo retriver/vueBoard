@@ -50,7 +50,7 @@
 								<td>{{ props.item.title }}</td>
 								<td>{{ props.item.writer }}</td>
 								<td>{{ props.item.regDttm }}</td>
-								<td>{{ props.item.view }}</td>
+								<td>{{ props.item.readCnt }}</td>
 								<td>{{ props.item.reply }}</td>
 							</template>
 						</v-data-table>
@@ -83,7 +83,7 @@ export default {
 				{ text: '제목', align: 'start', value: 'title' },
 				{ text: '작성자', align: 'center', value: 'writer' },
 				{ text: '작성일시', align: 'center', value: 'regDttm' },
-				{ text: '조회수', align: 'center', value: 'view' },
+				{ text: '조회수', align: 'center', value: 'readCnt' },
 				{ text: '댓글수', align: 'center', value: 'reply' },
 			],
 			document: [],

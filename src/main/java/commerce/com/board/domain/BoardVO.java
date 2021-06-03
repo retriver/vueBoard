@@ -19,7 +19,7 @@ public class BoardVO {
   private String content;
   private String writer;
   private String regDttm;
-  private int view;
+  private int readCnt;
   private int reply;
 
   private int startNo;

@@ -5,7 +5,7 @@
     "content": "Test Doc Content <br> Hello World!!",
     "writer": "Test Writer 1",
     "regtm": "2020-12-15 16:00",
-    "view": 13,
+    "readCnt": 13,
     "reply": 2
   },
   {
@@ -14,7 +14,7 @@
     "content": "Test Doc Content <br> Hello World!!",
     "writer": "Test Writer 2",
     "regtm": "2020-12-15 16:01",
-    "view": 13,
+    "readCnt": 13,
     "reply": 2
   },
   {
@@ -23,7 +23,7 @@
     "content": "Test Doc Content <br> Hello World!!",
     "writer": "Test Writer 3",
     "regtm": "2020-12-15 16:02",
-    "view": 13,
+    "readCnt": 13,
     "reply": 2
   },
   {
@@ -32,7 +32,7 @@
     "content": "Test Doc Content <br> Hello World!!",
     "writer": "Test Writer 4",
     "regtm": "2020-12-15 16:03",
-    "view": 13,
+    "readCnt": 13,
     "reply": 2
   },
   {
@@ -41,7 +41,7 @@
     "content": "Test Doc Content <br> Hello World!!",
     "writer": "Test Writer 5",
     "regtm": "2020-12-15 16:04",
-    "view": 13,
+    "readCnt": 13,
     "reply": 2
   },
   {
@@ -50,7 +50,7 @@
     "content": "Test Doc Content <br> Hello World!!",
     "writer": "Test Writer 6",
     "regtm": "2020-12-15 16:05",
-    "view": 13,
+    "readCnt": 13,
     "reply": 2
   },
   {
@@ -59,7 +59,7 @@
     "content": "Test Doc Content <br> Hello World!!",
     "writer": "Test Writer 7",
     "regtm": "2020-12-15 16:06",
-    "view": 13,
+    "readCnt": 13,
     "reply": 2
   },
   {
@@ -68,7 +68,7 @@
     "content": "Test Doc Content <br> Hello World!!",
     "writer": "Test Writer 8",
     "regtm": "2020-12-15 16:07",
-    "view": 13,
+    "readCnt": 13,
     "reply": 2
   },
   {
@@ -77,7 +77,7 @@
     "content": "Test Doc Content <br> Hello World!!",
     "writer": "Test Writer 9",
     "regtm": "2020-12-15 16:08",
-    "view": 13,
+    "readCnt": 13,
     "reply": 2
   },
   {
@@ -86,7 +86,7 @@
     "content": "Test Doc Content <br> Hello World!!",
     "writer": "Test Writer 10",
     "regtm": "2020-12-15 16:09",
-    "view": 13,
+    "readCnt": 13,
     "reply": 2
   }
 ]

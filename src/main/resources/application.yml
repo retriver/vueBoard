@@ -6,13 +6,36 @@ spring.profiles.active: local
 spring:
   datasource:
     #initialization-mode=never
-    # driver-class-name: com.mysql.cj.jdbc.Driver
+    # log4jdbc
+    ## PostgreSQL ----------------------------------
+    # 'org.postgresql:postgresql:42.2.20'    
+    #driverClassName: org.postgresql.Driver
+    #url: jdbc:postgresql://localhost:5432/tenq
+    ## Mysql ----------------------------------
+    # 'mysql:mysql-connector-java:5.1.49' 
     # driverClassName: com.mysql.cj.jdbc.Driver
-    driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
     # url: jdbc:mysql://localhost:3306/tenq?autoReconnect=true&useUnicode=true&characterEncoding=UTF8&verifyServerCertificate=false&useSSL=false&&serverTimezone=UTC
-    url: jdbc:log4jdbc:mysql://localhost:3306/tenq?autoReconnect=true&useUnicode=true&characterEncoding=UTF8
-    username: tenq
-    password: tenq@#
+    ## Oracle ----------------------------------
+    # 'com.oracle.jdbc:ojdbc8:12.2.0.1' 
+    # driverClassName: oracle.jdbc.driver.OracleDriver
+    # url: jdbc:oracle:thin:@localhost:1521/xe    
+    ##  log4jdbc  Driver-----------------------------------------------------
+    driverClassName: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    ## PostgreSQL ----------------------------------
+    #url: jdbc:log4jdbc:postgresql://localhost:5432/tenq
+    ## mysql ----------------------------------
+    #url: jdbc:log4jdbc:mysql://localhost:3306/tenq?autoReconnect=true&useUnicode=true&characterEncoding=UTF8
+    ## mariadb ----------------------------------
+    #url: jdbc:log4jdbc:mariadb://localhost:3306/testdb
+    ## Oracle ----------------------------------
+    #url: jdbc:log4jdbc:oracle:thin:@localhost:1521/xe
+    url: jdbc:log4jdbc:oracle:thin:@172.16.1.183:1521:TPEARL
+    ## mysql 
+    #username: tenq
+    #password: tenq@#
+    ## Oracle 
+    username: pearl
+    password: brnet2000!#%  
     #tomcat:
       #test-on-borrow: true
       #validation-interval: 3000 

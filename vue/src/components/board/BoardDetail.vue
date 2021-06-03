@@ -23,7 +23,7 @@
 						/>
 					</v-col>
 					<v-col>
-						<v-text-field label="View" readonly dense :value="view" />
+						<v-text-field label="ReadCnt" readonly dense :value="readCnt" />
 					</v-col>
 				</v-row>
 				Content<br />
@@ -159,7 +159,7 @@ export default {
 			title: '',
 			writer: '',
 			regDttm: '',
-			view: 0,
+			readCnt: 0,
 			replyCount: 0,
 			replies: null,
 			comment: '',
@@ -177,7 +177,7 @@ export default {
 				this.$refs.viewer.setContent(response.data.content)
 				this.writer = response.data.writer
 				this.regDttm = response.data.regDttm
-				this.view = response.data.view
+				this.readCnt = response.data.readCnt
 				this.replyCount = response.data.reply
 			})
 			.catch(error => {
