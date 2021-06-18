@@ -41,7 +41,7 @@
       https://github.com/YeonCheolGit/mybatis-wine-price  ( ?? )
 
 
-  * ESlink / Prettier  ---------------------------------------------------------------------------
+  * ESlink / Prettier  --------------------------------------------------------------------------- 
       https://prettier.io/   * 옵션 : https://prettier.io/docs/en/options.html      
       https://eslint.org/    * 옵션 : https://eslint.org/docs/user-guide/formatters/      
       https://www.npmjs.com/package/@vue/eslint-config-airbnb      
@@ -62,23 +62,24 @@
       https://soojae.tistory.com/39
       https://soojae.tistory.com/39
 
-  * browserslist  ------------------------------------------------------------------------------
+  * browserslist  ------------------------------------------------------------------------------ 
       https://blog.shiren.dev/2020-12-01/
 
 
 
-  * 기타  ----------------------------------------------------------------------------------------
-     - Vue와 NativeScript로 네이티브 모바일 앱 만들기
-        https://uxgjs.tistory.com/185
-        https://vuejs-kr.github.io/vue/nativescript/2017/08/11/introduce-vue-nativescript-01/
+  * 기타  ---------------------------------------------------------------------------------------- 
+     - Vue와 NativeScript로 네이티브 모바일 앱 만들기 
+        https://uxgjs.tistory.com/185        
+        https://vuejs-kr.github.io/vue/nativescript/2017/08/11/introduce-vue-nativescript-01/        
 
 
-     - 운영 빌드 시 console.log 제거 및 에러 해결
+     - 운영 빌드 시 console.log 제거 및 에러 해결 
         https://gitabout.com/3
-     - Git 입문
+        
+     - Git 입문 
         https://backlog.com/git-tutorial/kr/stepup/stepup3_2.html
 
 
-
   * bootstrap-vue  ----------------------------------------------------------------------------
+ 
 
