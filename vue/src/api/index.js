@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios from 'axios'   // axios : HTTP 전송을 수행합니다.
 
 // 서버 IP
 const instance = axios.create({

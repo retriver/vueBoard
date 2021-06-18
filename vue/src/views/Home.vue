@@ -67,7 +67,6 @@
 
 <script>
 // @ is an alias to /src
-
 export default {
 	name: 'Home',
 	components: {},
@@ -75,7 +74,5 @@ export default {
 </script>
 
 <style scoped>
-a {
-	text-decoration: none;
-}
+a {	text-decoration: none;}
 </style>

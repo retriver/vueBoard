@@ -1,0 +1,52 @@
+root: true
+
+parser: babel-eslint
+
+extends:
+  # http://eslint.org/docs/user-guide/configuring#using-eslintrecommended
+  - eslint:recommended
+  - plugin:vue/recommended
+
+plugins:
+  # https://github.com/prettier/eslint-plugin-prettier
+  - prettier
+
+env:
+  es6: true
+  browser: true
+  node: true
+
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: module
+  parser: babel-eslint
+
+rules:
+  ### Errors ###
+  no-unused-vars: 1
+  no-console: 0
+  no-debugger: 0
+  
+  prettier/prettier:
+    - error
+    -
+      trailingComma: none #all
+      bracketSpacing: true #false
+      endOfLine: auto
+      singleQuote: true
+      semi: true
+      useTabs: false
+      tabWidth: 2
+      printWidth: 80
+      arrowParens: avoid
+      htmlWhitespaceSensitivity: css
+      requirePragma: false
+      insertPragma: false
+      jsxBracketSameLine: false
+      jsxSingleQuote: false
+      proseWrap: preserve
+      quoteProps: as-needed

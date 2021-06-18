@@ -35,5 +35,44 @@
     "vue-cli-plugin-vuetify": "~2.0.8",
     "vue-template-compiler": "^2.6.11",
     "vuetify-loader": "^1.3.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "ignorePatterns": [
+      "src/plugins/",
+      "node_modules/"
+    ],
+    "extends": [
+      "plugin:vue/recommended",
+      "@vue/airbnb"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+        "no-console": "off"
+      , "prettier/prettier": [
+         "error", { "endOfLine": "auto"
+                   ,"arrowParens": "avoid"
+                   ,"bracketSpacing": true
+                   , "htmlWhitespaceSensitivity": "css"
+                   , "insertPragma": false
+                   , "jsxBracketSameLine": false
+                   , "jsxSingleQuote": false
+                   , "printWidth": 80
+                   , "proseWrap": "preserve"
+                   , "quoteProps": "as-needed"
+                   , "requirePragma": false
+                   , "semi": true
+                   , "singleQuote": true
+                   , "tabWidth": 2
+                   , "trailingComma": "none"
+                   , "useTabs": false
+                  }
+      ]
+    }
   }
 }

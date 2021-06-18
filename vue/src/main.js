@@ -1,6 +1,9 @@
 import Vue from 'vue'
+//  App.vue import
 import App from './App.vue'
+// 애플리케이션 내 모든 웹페이지 경로 매핑 및 전체 페이지에서 실행할 코드
 import router from '@/router/index'
+// 애플리케이션 내에서 사용할 함수, 변수 등을 지정하고 관리
 import store from '@/store/index'
 import vuetify from '@/plugins/vuetify'
 // Vuetify-dialog

@@ -1,0 +1,138 @@
+
+vue 입문서
+    https://amanokaze.github.io/blog/Vuejs-Setting-with-SB/
+    https://joshua1988.github.io/web-development/vuejs/vuejs-tutorial-for-beginner/
+
+https://bootstrap-vue.org/docs/components
+
+vue 3
+    https://v3.ko.vuejs.org/
+    https://v3.ko.vuejs.org/guide/introduction.html
+
+vue study
+    https://joshua1988.github.io/web-development/vuejs/vue3-coming/
+    https://amanokaze.github.io/blog/Vuejs-Setting-with-SB/     ☆☆☆☆☆
+    https://whwl.tistory.com/42
+    https://uxgjs.tistory.com/256
+    https://velog.io/@skyepodium/VUEX-store-여러-개를-모듈화하기
+
+online code test
+    : https://codepen.io/team/Vue/pen/KKpRVpx
+
+
+vue와 함께 사용하기 좋은 프론트엔드 3대장
+1. Vuetify
+       ---------------------------------------------------------------
+          https://vuetifyjs.com/en/resources/themes/
+          https://store.vuetifyjs.com/products/vuetify-material-dashboard-free/preview
+
+          * https://doitnow-man.tistory.com/253
+       ---------------------------------------------------------------
+
+2. BootstrapVue
+      https://bootstrap-vue.js.org/
+
+3. Quasar
+      https://quasar-framework.org/
+       ---------------------------------------------------------------
+          https://quasar.dev/#/showcase
+
+          https://github.com/pratik227/quasar-admin ( https://quasar-admin-demo.netlify.app/ )
+          https://github.com/odranoelBR/vue-quasar-admin-example
+          https://next.quasar.dev/start/how-to-use-vue#using-quasar-directives
+          https://quasar-admin.firebaseapp.com/?ref=madewithvuejs.com#/server-side-data-table
+
+          * https://www.youtube.com/watch?v=sNlsfkR96Tc
+            https://hihellloitland.tistory.com/76
+            https://godffs.tistory.com/3306
+            https://godffs.tistory.com/3268
+       ---------------------------------------------------------------
+
+
+
+
+* Vue store  ( https://uxgjs.tistory.com/149 )
+
+    //Vuex :  개발하는 애플리케이션의 모든 컴포넌트에 대한 중앙 집중식 저장소 역활 및 관리
+    //        데이터를 store라는 파일을 통해 관리하고 프로젝트 전체에 걸쳐 활용할 수 있게 해 주는 방법
+    import Vuex from 'vuex'
+
+
+    Vuex의 핵심구성 State, Mutations, Actions, Getters로 구성되어 있습니다.
+
+    State
+        state는 쉽게 말하면 프로젝트에서 공통으로 사용할 변수를 정의 합니다.
+              프로젝트 내의 모든 곳에서 참조 및 사용이 가능합니다.
+        state를 통해 각 컴포넌트에서 동일한 값을 사용할 수 있습니다.
+        ---------------------------------------------------------------
+            export const state = () => ({
+                account: null,
+                isAdmin: null,
+                item: null
+            });
+        ---------------------------------------------------------------
+
+    Mutations  * 동기 처리
+        state를 변경시키는 역활을 합니다. (Mutations을 통해서만 state를 변경해야 함)
+              비동기 처리가 아니라 동기처리를 합니다. 위의 함수가 실행되고 종료된 후 그 다음 아래의 함수가 실행됩니다.
+             >  commit('함수명', '전달인자')으로 실행 시킬 수 있습니다.
+        mutations 내에 함수 형태로 작성합니다.
+        ---------------------------------------------------------------
+            export const mutations = {
+                currentUser(state, account) {
+                    state.account = account; // state의 account변수에 넘겨 받은 account값을 입력함
+                }
+            };
+        ---------------------------------------------------------------
+
+
+    Actions  * 비동기처리
+        Mutations를 실행시키는 역활을 합니다. Mutations이 실행되면 state도 변경이 되겠지요.
+             동기 처리가 아니라 비동기처리를 합니다. 순서에 상관없이 먼저 종료된 함수의 피드백을 받아 후속 처리를 하게 됩니다.
+        dispatch('함수명', '전달인자')으로 실행 시킬 수 있습니다. ex) dispatch('함수명', '전달인자', {root:true})
+        actions 내에 함수 형태로 작성합니다.
+             비동기 처리이기 때문에 콜백함수로 주로 작성합니다.
+        ---------------------------------------------------------------
+         >  일반 형태로 실행
+                dispatch('setAccount', account );
+
+                export const actions = {
+                  setAccount({ commit, dispatch }, account) {
+                    commit('currentUser', account);
+                    dispatch('setIsAdmin', account.uid);
+                  }
+                }
+
+         > Components에서 then()으로 콜백함수 실행
+                dispatch('setAccount', account ).then(() => {   });
+
+                export const actions = {
+                  setAccount({ commit }, account) {
+
+                    return new Promise((resolve, reject) => {
+                      setTimeout(() => {
+                        commit('currentUser', account);
+                        resolve()
+                      }, 1000)
+                    })
+                  }
+                }
+        ---------------------------------------------------------------
+
+
+    Getters
+            각 Components의 계산된 속성(computed)의 공통 사용 정의라고 보시면 됩니다.
+            여러 Components에서 동일한 computed가 사용 될 경우 Getters에 정의하여 공통으로 쉽게 사용할 수 있습니다.
+            하위 모듈의 getters를 불러오기 위해서는 특이하게 this.$store.getters["경로명/함수명"]; 을 사용해야 합니다.
+        ---------------------------------------------------------------
+            export const getters = {
+              isAuthenticated(state) { // 현재 로그인 상태인지 확인 (true/false)
+                return !!state.user;
+              },
+
+              getAccount(state) {      // 회원정보 불러오기
+                return state.account;
+              },
+            };
+        ---------------------------------------------------------------
+

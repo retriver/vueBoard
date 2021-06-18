@@ -1,25 +1,4 @@
- ********************************************************************************************************************************
-     * SPRING BOOT + REACT
-        https://m.blog.naver.com/rudnfskf2/222148407272
-        https://sundries-in-myidea.tistory.com/71
-        https://ojava.tistory.com/185?category=348319
 
-
-    * SPRING BOOT+ vue
-      * spring boot + vue.js 연동
-         https://jamong-icetea.tistory.com/207
-         https://ojava.tistory.com/152
-      * project
-        https://github.com/jinseogood/vue-springboot-board  ( https://dev-jsk.tistory.com/127 )
-        https://github.com/SwiftlyAside/ProjektFinal
-        https://github.com/ednadev/project-book
-        https://github.com/YeonCheolGit/mybatis-wine-price  ( ?? )
-
-
- 참고 :  https://tychejin.tistory.com/304
-       https://ojava.tistory.com/185?category=348319
-       https://mr-spock.tistory.com/3
-********************************************************************************************************************************
 
 1. node.js설치
    1.1. node.js 다운로드  > Stable 버전인 'node-v14.17.0-x64.msi' 다운로드하고 기본 설정대로 설치   한다,.
