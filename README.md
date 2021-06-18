@@ -20,7 +20,7 @@
       https://sundries-in-myidea.tistory.com/71      
       https://ojava.tistory.com/185?category=348319
 
-  * vue  /  SPRING BOOT+ vue ----------------------------------------------------------------------
+  * vue  /  SPRING BOOT+ vue ----------------------------------------------------------------------      
       https://tychejin.tistory.com/304      
       https://ojava.tistory.com/185?category=348319      
       https://mr-spock.tistory.com/3      
@@ -33,7 +33,7 @@
       https://ichi.pro/ko/2021-nyeon-react-vs-vue-eotteon-geos-eul-sayonghaeyahabnikka-243684195750587
       
 
-  * project sources  --------------------------------------------------------------------------
+  * project sources  --------------------------------------------------------------------------      
       https://github.com/jinseogood/vue-springboot-board  ( https://dev-jsk.tistory.com/127 )      
       https://github.com/jonashackt/spring-boot-vuejs      
       https://github.com/SwiftlyAside/ProjektFinal      
@@ -51,10 +51,10 @@
       * ESlink yaml
            https://www.npmjs.com/package/eslint-plugin-yml           
 
-      * ESlink / Prettier / Airbnb      * 
-           https://techwell.wooritech.com/docs/tools/prettier/prettier-eslint-airbnb/#jsxsinglequote
-           https://rutgo-letsgo.tistory.com/70
-           https://kjwsx23.tistory.com/545
+      * ESlink / Prettier / Airbnb           
+           https://techwell.wooritech.com/docs/tools/prettier/prettier-eslint-airbnb/#jsxsinglequote           
+           https://rutgo-letsgo.tistory.com/70           
+           https://kjwsx23.tistory.com/545           
            > react : https://velog.io/@_jouz_ryul/ESLint-Prettier-Airbnb-Style-Guide로-설정하기
 
       https://velog.io/@ljinsk3/ESLint-Prettier-설정하는-방법
@@ -68,15 +68,15 @@
 
 
   * 기타  ---------------------------------------------------------------------------------------- 
-     - Vue와 NativeScript로 네이티브 모바일 앱 만들기 
+     - Vue와 NativeScript로 네이티브 모바일 앱 만들기         
         https://uxgjs.tistory.com/185        
         https://vuejs-kr.github.io/vue/nativescript/2017/08/11/introduce-vue-nativescript-01/        
 
 
-     - 운영 빌드 시 console.log 제거 및 에러 해결 
+     - 운영 빌드 시 console.log 제거 및 에러 해결         
         https://gitabout.com/3
         
-     - Git 입문 
+     - Git 입문         
         https://backlog.com/git-tutorial/kr/stepup/stepup3_2.html
 
 
