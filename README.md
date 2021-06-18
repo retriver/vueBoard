@@ -20,7 +20,7 @@
       https://sundries-in-myidea.tistory.com/71      
       https://ojava.tistory.com/185?category=348319
 
-  * vue  /  SPRING BOOT+ vue --------------------------------------------------------------------- 
+  * vue  /  SPRING BOOT+ vue ----------------------------------------------------------------------
       https://tychejin.tistory.com/304      
       https://ojava.tistory.com/185?category=348319      
       https://mr-spock.tistory.com/3      
@@ -33,7 +33,7 @@
       https://ichi.pro/ko/2021-nyeon-react-vs-vue-eotteon-geos-eul-sayonghaeyahabnikka-243684195750587
       
 
-  * project sources  ---------------------------------------------------------------------------
+  * project sources  --------------------------------------------------------------------------
       https://github.com/jinseogood/vue-springboot-board  ( https://dev-jsk.tistory.com/127 )      
       https://github.com/jonashackt/spring-boot-vuejs      
       https://github.com/SwiftlyAside/ProjektFinal      
