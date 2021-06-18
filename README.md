@@ -20,7 +20,7 @@
       https://sundries-in-myidea.tistory.com/71      
       https://ojava.tistory.com/185?category=348319
 
-  * vue  /  SPRING BOOT+ vue ---------------------------------------------------------------------
+  * vue  /  SPRING BOOT+ vue --------------------------------------------------------------------- 
       https://tychejin.tistory.com/304      
       https://ojava.tistory.com/185?category=348319      
       https://mr-spock.tistory.com/3      
@@ -41,7 +41,7 @@
       https://github.com/YeonCheolGit/mybatis-wine-price  ( ?? )
 
 
-  * ESlink / Prettier  --------------------------------------------------------------------------- 
+  * ESlink / Prettier  ---------------------------------------------------------------------------  
       https://prettier.io/   * 옵션 : https://prettier.io/docs/en/options.html      
       https://eslint.org/    * 옵션 : https://eslint.org/docs/user-guide/formatters/      
       https://www.npmjs.com/package/@vue/eslint-config-airbnb      
@@ -62,7 +62,7 @@
       https://soojae.tistory.com/39
       https://soojae.tistory.com/39
 
-  * browserslist  ------------------------------------------------------------------------------ 
+  * browserslist  ------------------------------------------------------------------------------  
       https://blog.shiren.dev/2020-12-01/
 
 
