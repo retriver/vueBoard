@@ -17,42 +17,41 @@
 ## 참고 Link 
    * SPRING BOOT + REACT ------------------------------------------------------------------------
       https://m.blog.naver.com/rudnfskf2/222148407272      
-      https://sundries-in-myidea.tistory.com/71
-      
+      https://sundries-in-myidea.tistory.com/71      
       https://ojava.tistory.com/185?category=348319
 
   * vue  /  SPRING BOOT+ vue ---------------------------------------------------------------------
-      https://tychejin.tistory.com/304
-      https://ojava.tistory.com/185?category=348319
-      https://mr-spock.tistory.com/3
-      https://jamong-icetea.tistory.com/207
-      https://ojava.tistory.com/152
-      https://amanokaze.github.io/blog/Vuejs-Setting-with-SB/
-      https://uxgjs.tistory.com/112?category=770389
-      https://uxgjs.tistory.com/149
-      https://blog.buildit.kr/post/7
+      https://tychejin.tistory.com/304      
+      https://ojava.tistory.com/185?category=348319      
+      https://mr-spock.tistory.com/3      
+      https://jamong-icetea.tistory.com/207      
+      https://ojava.tistory.com/152      
+      https://amanokaze.github.io/blog/Vuejs-Setting-with-SB/      
+      https://uxgjs.tistory.com/112?category=770389      
+      https://uxgjs.tistory.com/149      
+      https://blog.buildit.kr/post/7      
       https://ichi.pro/ko/2021-nyeon-react-vs-vue-eotteon-geos-eul-sayonghaeyahabnikka-243684195750587
+      
 
-  * project sources
-      https://github.com/jinseogood/vue-springboot-board  ( https://dev-jsk.tistory.com/127 )
-      https://github.com/jonashackt/spring-boot-vuejs
-      https://github.com/SwiftlyAside/ProjektFinal
-      https://github.com/ednadev/project-book
+  * project sources  ---------------------------------------------------------------------------
+      https://github.com/jinseogood/vue-springboot-board  ( https://dev-jsk.tistory.com/127 )      
+      https://github.com/jonashackt/spring-boot-vuejs      
+      https://github.com/SwiftlyAside/ProjektFinal      
+      https://github.com/ednadev/project-book      
       https://github.com/YeonCheolGit/mybatis-wine-price  ( ?? )
 
 
   * ESlink / Prettier  ---------------------------------------------------------------------------
-      https://prettier.io/   * 옵션 : https://prettier.io/docs/en/options.html
-      https://eslint.org/    * 옵션 : https://eslint.org/docs/user-guide/formatters/
-      https://www.npmjs.com/package/@vue/eslint-config-airbnb
-      https://kavoom2.github.io/node.js/Eslint/    < ESlink 설정방법
+      https://prettier.io/   * 옵션 : https://prettier.io/docs/en/options.html      
+      https://eslint.org/    * 옵션 : https://eslint.org/docs/user-guide/formatters/      
+      https://www.npmjs.com/package/@vue/eslint-config-airbnb      
+      https://kavoom2.github.io/node.js/Eslint/    < ESlink 설정방법      
       https://www.daleseo.com/js-eslint/
 
-
       * ESlink yaml
-           https://www.npmjs.com/package/eslint-plugin-yml
+           https://www.npmjs.com/package/eslint-plugin-yml           
 
-      *ESlink / Prettier / Airbnb
+      * ESlink / Prettier / Airbnb      * 
            https://techwell.wooritech.com/docs/tools/prettier/prettier-eslint-airbnb/#jsxsinglequote
            https://rutgo-letsgo.tistory.com/70
            https://kjwsx23.tistory.com/545
