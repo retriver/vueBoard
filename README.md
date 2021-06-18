@@ -57,14 +57,12 @@
            https://kjwsx23.tistory.com/545           
            > react : https://velog.io/@_jouz_ryul/ESLint-Prettier-Airbnb-Style-Guide로-설정하기
 
-      https://velog.io/@ljinsk3/ESLint-Prettier-설정하는-방법
-      https://yhancsx.github.io/js/vscode-eslint-prettier/
-      https://soojae.tistory.com/39
-      https://soojae.tistory.com/39
+      https://velog.io/@ljinsk3/ESLint-Prettier-설정하는-방법      
+      https://yhancsx.github.io/js/vscode-eslint-prettier/      
+      https://soojae.tistory.com/39      
 
   * browserslist  ------------------------------------------------------------------------------  
       https://blog.shiren.dev/2020-12-01/
-
 
 
   * 기타  ---------------------------------------------------------------------------------------- 
